@@ -18,7 +18,7 @@ Liste des infrastructures prises en compte: réseau Sytral (https://transport.da
 - gares voyageurs SNCF (https://transport.data.gouv.fr/datasets/horaires-des-lignes-ter-sncf/)
 - Pôles universitaires (donnée agence)
 
-La donnée est structurée comme suit: la zone d'influence de l'infrastructure est modélisée par une zone tampon dont le rayon dépend du mode:
+La donnée est structurée comme suit: la zone d'influence de l'infrastructure est modélisée par une zone tampon dont le rayon dépend du mode
 - 400 m pour les bus/trams
 - 500 m pour les métros et les gares TER
 - 1000 m pour les pôles universitaires
