@@ -21,7 +21,7 @@ Liste des infrastructures prises en compte: réseau Sytral (https://transport.da
 La donnée est structurée comme suit: la zone d'influence de l'infrastructure est modélisée par une zone tampon dont le rayon dépend du mode
 - 400 m pour les bus/trams
 - 500 m pour les métros et les gares TER
-- 1000 m pour les pôles universitaires
+- 1000 m pour les principaux pôles universitaires
 
 Ensute les zones tampons sont assemblées par ligne, formant des corridors.
 
