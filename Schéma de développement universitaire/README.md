@@ -31,6 +31,6 @@ Ce sont les zonages UCe du PLU du Grand Lyon
 
 ## Analyse spatiale
 
-Toutes les zones sont superposées, puis découpées entre elles (union), et les superpositions sont comptées dans chaque polygone produit. L'indicateur recherché est le nombre de superpositions rapporté sur une échelle de 0 à 5. Il est cartographié par une analyse thématique en dégradé de couleurs.
+Toutes les zones sont superposées, puis découpées entre elles (union), et les superpositions sont comptées dans chaque polygone produit. L'indicateur recherché est le nombre de superpositions rapporté sur une échelle en 5 classes: de 0 à 5 et plus. Il est cartographié par une analyse thématique en dégradé de couleurs.
 
 
