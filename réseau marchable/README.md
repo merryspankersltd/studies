@@ -41,6 +41,14 @@ Elle se fait à l'aide de pyrosm (https://pyrosm.readthedocs.io/en/latest/) une 
 
 Dans notre cas, les traitements seront effectuées sous Grass à partir de données hébergées sous postgresql.
 
+Dans un premier temps, télécharger une archive pbf.
+
+```console
+wget https://download.geofabrik.de/europe/france/rhone-alpes-latest.osm.pbf
+```
+
+Ensuite; extraire le réseau marchable et l'exporter dans postgres
+
 ```python
 
 import requests
@@ -48,7 +56,7 @@ from pyrosm import get_data
 from pyrosm import OSM
 from sqlalchemy import create_engine
 
-fp = get_data("data.pbf")
+fp = get_data("rhone-alpes-latest.osm.pbf")
 
 # Initialize the OSM parser object
 osm = OSM(fp)
