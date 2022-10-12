@@ -35,19 +35,15 @@ Dans notre cas, c'est la première solution qui sera choisie.
 
 Téléchargement d'une archive `.pbf` sur https://geofabrik.de ou extraction d'un périmètre à façon sur https://bbbike.org
 
+```console
+wget https://download.geofabrik.de/europe/france/rhone-alpes-latest.osm.pbf
+```
+
 #### extraction du réseau
 
 Elle se fait à l'aide de pyrosm (https://pyrosm.readthedocs.io/en/latest/) une librairie python basée sur geopandas, qui produit un geodataframe à partir d'une archive `.pbf`. Ce geodataframe peut ensuite être exportée dans une base postgres à l'aide des outils io de geopandas/sqlalchemy, ou bien être directement analysée sous forme de graphe en enchaînant NetworkX et OSMnx.
 
 Dans notre cas, les traitements seront effectuées sous Grass à partir de données hébergées sous postgresql.
-
-Dans un premier temps, télécharger une archive pbf.
-
-```console
-wget https://download.geofabrik.de/europe/france/rhone-alpes-latest.osm.pbf
-```
-
-Ensuite; extraire le réseau marchable et l'exporter dans postgres
 
 ```python
 
